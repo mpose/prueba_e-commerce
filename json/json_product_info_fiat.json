@@ -1,0 +1,22 @@
+[
+    {
+        "id": 3,
+        "name": "Fiat Way",
+        "description": "A comienzos de 2011 llegó a Uruguay proveniente desde la planta de Betím, en Minas Geráis, es un vehículo con excelente relación precio-calidad que asegura un confort ideal para andar dentro de la ciudad.",
+        "cost": 14500,
+        "currency": "USD",
+        "soldCount": 52,
+        "category": "Autos",
+        "images": [
+            "img/fiat_way/fiat_frente.jpg",
+            "img/fiat_way/fiat_lateral2.jpg",
+            "img/fiat_way/fiat_lateral.jpg",
+            "img/fiat_way/Fiat_interior.jpg",
+            "img/fiat_way/fiat-interior2.jpg"
+        ],
+        "relatedProducts": [
+            0,
+            2
+        ]
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Suzuki Celerio",
+        "description": "Actualmente se encuentra en su primera generación, reemplazando al Suzuki Alto. El Celerio se caracteriza por disponer de una gran habitabilidad, tanto para los pasajeros como para la carga del maletero, a pesar de no disponer de unos acabados modernos.",
+        "cost": 12500,
+        "currency": "USD",
+        "soldCount": 25,
+        "category": "Autos",
+        "images": [
+            "img/Suzuki_Celerio/suzuki-frente.jpg",
+            "img/Suzuki_Celerio/suzuki-izq.jpg",
+            "img/Suzuki_Celerio/suzuki-atras.jpg",
+            "img/Suzuki_Celerio/suzuki_interior.jpg",
+            "img/Suzuki_Celerio/suzuki-maletero.jpg"
+        ],
+        "relatedProducts": [
+            1,
+            3
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Chevrolet Onix Joy",
+        "description": "Potenciá tu actitud con Onix Joy que, además de destacarse por su diseño juvenil y moderno, te ofrecé una óptima autonomía, un desempeño equilibrado y el máximo confort interior. \u003cbr\u003eYa sea un viaje largo o un simple paseo por la ciudad, el confort es uno de los puntos fuertes del Onix. Esta versión incluye aire acondicionado, asientos tapizados en tela y gran espacio interior que te garantiza el máximo confort.",
+        "cost": 13500,
+        "currency": "USD",
+        "soldCount": 14,
+        "category": "Autos",
+        "images": [
+            "img/prod1.jpg",
+            "img/prod1_1.jpg",
+            "img/prod1_2.jpg",
+            "img/prod1_3.jpg",
+            "img/prod1_4.jpg"
+        ],
+        "relatedProducts": [
+            1,
+            3
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Fiat Way",
+        "description": "A comienzos de 2011 llegó a Uruguay proveniente desde la planta de Betím, en Minas Geráis, es un vehículo con excelente relación precio-calidad que asegura un confort ideal para andar dentro de la ciudad.",
+        "cost": 14500,
+        "currency": "USD",
+        "soldCount": 52,
+        "category": "Autos",
+        "images": [
+            "img/fiat_way/fiat_frente.jpg",
+            "img/fiat_way/fiat_lateral2.jpg",
+            "img/fiat_way/fiat_lateral.jpg",
+            "img/fiat_way/Fiat_interior.jpg",
+            "img/fiat_way/fiat-interior2.jpg"
+        ],
+        "relatedProducts": [
+            1,
+            3
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Peugeot 208",
+        "description": "El gusto y refinamiento de su diseño es indudable, tanto en la carrocería como en el habitáculo de este pequeño modelo. Frente a sus competidores, aunque quizá a un precio no tan atractivo, el Peugeot 208 cuenta con un interior que destaca por calidad y también por su equipamiento en el apartado tecnológico.",
+        "cost": 15200,
+        "currency": "USD",
+        "soldCount": 17,
+        "category": "Autos",
+        "images": [
+            "img/peugeot_208/peugeot_frente.jpg",
+            "img/peugeot_208/peugeot_baul.jpg",
+            "img/peugeot_208/peugeot_atras.jpg",
+            "img/peugeot_208/peugeot_lateral.jpg",
+            "img/peugeot_208/peugeot_interior.jpg"
+        ],
+        "relatedProducts": [
+            1,
+            3
+        ]
+    }
+]

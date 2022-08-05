@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/dropzone.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="nav-link" href="inicio.html">Inicio</a>
+          <a class="nav-link" href="categories.html">Categorías</a>
+          <a class="nav-link" href="products.html">Productos</a>
+          <a class="nav-link" href="sell.html">Vender</a>
+        <div id="info-usuario" style="display: none;">
+          <div class="dropdown">
+            <button id="usuario" style="background-color: #343A40; color: #007bff; border: none;" class="btn btn-primary dropdown-toggle" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              href="my-profile.html">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+              <a class="dropdown-item" href="cart.html">Mi carrito</a>
+              <div class="dropdown-divider"></div>
+              <a id="salir" class="dropdown-item" href="#">Salir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <input class="form-control" type="file" id="inputFile" onchange="previewFile()" placeholder="">
+    <img id="foto" src="" height="200" alt="Foto de Perfil">
+    <button class="btn btn-primary" id="guardar" onclick="guardar()">Guardar</button>
+  </div>
+  <div class="container p-5">
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom01">Nombre</label>
+          <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" value="" required>
+          <div class="valid-feedback">
+            Ok!.
+          </div>
+          <div class="invalid-feedback">
+            Debes ingresar tu nombre.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom02">Apellido</label>
+          <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" value="" required>
+          <div class="valid-feedback">
+            Ok!.
+          </div>
+          <div class="invalid-feedback">
+            Debes ingresar tu apellido.
+          </div>
+        </div>
+      <div class="col-md-2 mb-3">
+        <label for="validationCustom04">Edad</label>
+        <input type="number" class="form-control" id="inputEdad" placeholder="Edad" value="" required>
+        <div class="valid-feedback">
+          Ok!.
+        </div>
+        <div class="invalid-feedback">
+          Debes ingresar tu edad.
+        </div>
+      </div>
+    </div>
+      <div class="form-row">
+        <div class="col-md-5 mb-3">
+          <label for="validationCustom03">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="email@ejemplo.com" required>
+          <div class="valid-feedback">
+            Ok!.
+          </div>
+          <div class="invalid-feedback">
+            Ingresa tu nuevo email si deseas actualizarlo.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Telefono de Contacto</label>
+          <input type="number" class="form-control" id="inputTelefono" placeholder="Telefono/Celular" required>
+          <div class="valid-feedback">
+            Ok!.
+          </div>
+          <div class="invalid-feedback">
+            Debes ingresar un numero de telefono.
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit" onclick="guardarDatos()">Actualizar datos</button>
+    </form>
+  </div>
+  <footer class="text-muted bg-light">
+    <div class="container">
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <div class="alert fade alert-success" role="alert" id="alertResult">
+    <span id="resultSpan"></span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dropzone.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/my-profile.js"></script>
+</body>
+
+</html>

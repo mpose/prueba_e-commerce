@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Suzuki Celerio",
+        "description": "Actualmente se encuentra en su primera generación, reemplazando al Suzuki Alto. El Celerio se caracteriza por disponer de una gran habitabilidad, tanto para los pasajeros como para la carga del maletero, a pesar de no disponer de unos acabados modernos.",
+        "cost": 12500,
+        "currency": "USD",
+        "soldCount": 25,
+        "category": "Autos",
+        "images": [
+            "img/Suzuki_Celerio/suzuki-frente.jpg",
+            "img/Suzuki_Celerio/suzuki-izq.jpg",
+            "img/Suzuki_Celerio/suzuki-atras.jpg",
+            "img/Suzuki_Celerio/suzuki_interior.jpg",
+            "img/Suzuki_Celerio/suzuki-maletero.jpg"
+        ],
+        "relatedProducts": [
+            0,
+            1
+        ]
+    }
+]

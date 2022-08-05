@@ -1,0 +1,22 @@
+[
+    {
+        "id": 5,
+        "name": "Nissan Kicks",
+        "description": "En un segmento donde la competencia es cada vez más aguerrida, la Nissan Kicks ofrece un buen promedio entre sus rivales. Se destaca por un diseño exterior original y un interior (al menos en esta versión Exclusive de tapizados claros) muy atractivo.",
+        "cost": 27490,
+        "currency": "USD",
+        "soldCount": 11,
+        "category": "Autos",
+        "images": [
+            "img/nissan_kicks/nissan_frente.jpg",
+            "img/nissan_kicks/nissan_atras.jpg",
+            "img/nissan_kicks/nissan_lateral.jpg",
+            "img/nissan_kicks/nissan_interior.jpg",
+            "img/nissan_kicks/nissan_maletero.jpg"
+        ],
+        "relatedProducts": [
+            1,
+            3
+        ]
+    }
+]
